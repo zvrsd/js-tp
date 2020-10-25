@@ -2,27 +2,26 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="css/contact.css"/>
-    
-    <title>JS page</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <title>Bienvenue</title>
 </head>
 
 <body>
-    <h1 id="title">Accueil</h1>
-    <!--
-    <button onclick="run()">Calculator</button>
-    <button onclick="run()">Change title color</button>
-    <button><a href="contact.html">Contact infos</a></button>
-    -->
-    <form action="cart.html">
-        <button type=submit>Shopping cart</button>
-    </form>
+  
+    <div class="navbar">
+        <a id="home_link" class="menu_tab" href="#home">Home</a>
+        <a id="cart_link" class="menu_tab" href="#cart">Cart</a>
+        <a id="contact_link" class="menu_tab" href="#contact">Contact</a>
+    </div>
+    <script src="js/main.js"></script>
+
+    <div id="page_content">
+        
+        <script>init()</script>
     
-    
-    <!--<script src="js/calc.js"></script>-->
-    <!--<script src="js/dom.js"></script>-->
-    
+    </div>
+
 </body>
 
 </html>

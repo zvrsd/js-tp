@@ -3,135 +3,140 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Subscribe</title>
 </head>
 
 <body>
     <table>
+    <tr>
+        <td></td>
+        
+        <td>
+            <h3>Get in touch</h3>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <label class="label-xl">Title</label>
+        </td>
+        
+        <td>
+            <input name="gender" value="Mr" type="radio" checked><label>Mr.</label>
+            <input name="gender" value="Miss" type="radio"><label>Miss.</label>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            FirstName
+        </td>
+        
+        <td>
+            <input id="firstname">
+        </td>
+        
+        <td>
+            <label id="error_firstname"></label>
+        </td>
+    </tr>
 
-        <tr>
-            <td>
+    <tr>
+        <td>
+            LastName
+        </td>
+        
+        <td>
+            <input id="lastname">
+        </td>
+        
+        <td>
+            <label id="error_lastname"></label>
+        </td>
+    </tr>
 
-            </td>
-            <td>
-                <h3>Get in touch</h3>
-            </td>
-        </tr>
+    <tr>
+        <td>
+            Email
+        </td>
+        
+        <td>
+            <input id="email">
+        </td>
+        
+        <td>
+            <label id="error_email"></label>
+        </td>
+    </tr>
 
-        <tr>
-            <td>
-                <label class="label-xl">Title</label>
-            </td>
-            <td>
-                <input name="gender" value="Mr" type="radio" checked><label>Mr.</label>
-                <input name="gender" value="Miss" type="radio"><label>Miss.</label>
-            </td>
-        </tr>
+    <tr>
+        <td>
+            Tel
+        </td>
+        
+        <td>
+            <input id="phone">
+        </td>
+        
+        <td>
+            <label id="error_phone"></label>
+        </td>
+    </tr>
 
-        <tr>
-            <td>
-                FirstName
-            </td>
-            <td>
-                <input id="firstname">
-            </td>
-            <td>
-                <label id="error_firstname">
-                </label>
-            </td>
-        </tr>
+    <tr>
+        <td>
+            Message
+        </td>
+        
+        <td>
+            <textarea id="message"></textarea>
+        </td>
+    </tr>
 
-        <tr>
-            <td>
-                LastName
-            </td>
-            <td>
-                <input id="lastname">
-            </td>
-            <td>
-                <label id="error_lastname">
-                </label>
-            </td>
-        </tr>
+    <tr>
+        <td></td>
+        <td>
+            10 characters max
+        </td>
+    </tr>
 
-        <tr>
-            <td>
-                Email
-            </td>
-            <td>
-                <input id="email">
+    <tr>
+        <td>
+            Terms and conditions
+        </td>
+        
+        <td>
+            <br>
+            <input type="checkbox" id="agree">agree<br>
+            <input type="checkbox" id="read">read
+        </td>
+    </tr>
 
-            </td>
-            <td>
-                <label id="error_email"></label>
-            </td>
-        </tr>
+    <tr>
+        <td>
+            <label id="error_label"></label>
+            <br>
+        </td>
+        
+        <td></td>
+        
+        <td>
+            * required fields
+        </td>
+    </tr>
+    
+    <tr>
+        <td></td>
+        
+        <td></td>
+        
+        <td>
+            <button id="send">SEND</button>
+        </td>
+    </tr>
+    
+</table>
 
-        <tr>
-            <td>
-                Tel
-            </td>
-            <td>
-                <input id="phone">
-            </td>
-            <td>
-                <label id="error_phone"></label>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                Message
-            </td>
-            <td>
-                <textarea id="message"></textarea>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-            </td>
-            <td>
-                10 characters max
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                Terms and conditions
-            </td>
-            <td>
-                <br>
-                <input type="checkbox" id="agree">agree<br>
-                <input type="checkbox" id="read">read
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <label id="error_label"></label>
-                <br>
-            </td>
-            <td>
-
-            </td>
-            <td>
-                * required fields
-            </td>
-        </tr>
-        <tr>
-            <td>
-
-            </td>
-            <td>
-
-            </td>
-            <td>
-                <button id="send">SEND</button>
-            </td>
-        </tr>
-    </table>
-
-    <script src="js/contact-dyn.js"></script>
+<script src="js/contact-dyn.js"></script>
 </body></html>

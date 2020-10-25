@@ -1,0 +1,90 @@
+<h1>Mon Panier</h1>
+
+<h3>Ajouter un produit</h3>
+<table id="add_table">
+    <tr>
+        <th>
+            Produit
+        </th>
+        <th>
+            Qte
+        </th>
+        <th>
+            Prix
+        </th>
+        <th>
+
+        </th>
+    </tr>
+
+    <tr>
+        <td>
+            <input type=text name="add_ref" id="add_ref_input" value="Produit" placeholder="Réference du produit">
+        </td>
+        <td>
+            <input type=number name="add_qty" id="add_qty_input" value="1">
+        </td>
+        <td>
+            <input type=number name="add_price" id="add_price_input" value="10">
+        </td>
+
+        <td>
+            <button id="add_product">Ajouter</button>
+        </td>
+    </tr>
+
+</table>
+
+<label class="info_message">&nbsp</label>
+<label class="error_message">&nbsp</label>
+
+<h3>Recapitulatif</h3>
+<table id="total_table">
+
+    <tr>
+        <th>
+            Net à payer
+        </th>
+
+        <td>
+            <label id="price_total_label">0</label>&euro;
+        </td>
+
+    </tr>
+
+</table>
+<label id="total_info_label">&nbsp</label>
+
+<br />
+
+<h3>Mes Produits</h3>
+<table id="cart_table">
+
+    <tr>
+        <th>
+            Produit
+        </th>
+
+        <th>
+            Qte
+        </th>
+
+        <th>
+            Prix
+        </th>
+
+        <th>
+            Total
+        </th>
+
+        <th></th>
+    </tr>
+
+</table>
+
+<label id="info_label">&nbsp</label>
+<label id="error_label">&nbsp</label>
+
+<br />
+
+<script src="../js/cart.js"></script>

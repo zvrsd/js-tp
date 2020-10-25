@@ -1,0 +1,95 @@
+<h1>Get in touch</h1>
+<table>
+    
+    <tr>
+        <th>
+            <label>Titre</label>
+        </th>
+         <th>
+            <label>Prénom</label>
+        </th>
+         <th>
+            <label>Nom</label>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <input name="gender" value="Mr" type="radio" checked><label>Mr.</label>
+            <input name="gender" value="Miss" type="radio"><label>Miss.</label>
+        </td>
+         <td>
+            <input id="firstname" placeholder="Prénom">
+        </td>
+        
+        <td>
+            <input id="lastname" placeholder="Nom">
+        </td>
+    </tr>
+    
+    <tr>
+        <th>
+            <label>Adresse Email</label>
+        </th>
+         <td colspan="2" class="align_left">
+            <input id="email" class="large">
+        </td>
+    </tr>
+    
+    <tr>
+        <th>
+            <label>Numero de télephone</label>
+        </th>
+        
+        <td colspan="2" class="align_left">
+            <input id="phone" class="large">
+        </td>
+    </tr>
+
+    <tr>
+        <th>
+            <label>Message</label>
+        </th>
+        
+        <td colspan="2" class="align_left">
+            <textarea id="message" class="large" rows="10"></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <th>
+            <label>Conditions</label>
+        </th>
+        
+        <td colspan="2" class="align_left">
+            <br>
+            <input type="checkbox" id="agree">J'ai lu et j'accetpe les conditions<br>
+            <input type="checkbox" id="read">J'accepte de recevoir des emails indésirables au moins 8 fois par jour
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label id="error_label"></label>
+            <br>
+        </td>
+        
+        <td></td>
+        
+        <td>
+            * required fields
+        </td>
+    </tr>
+    
+    <tr>
+        <td></td>
+        
+        <td></td>
+        
+        <td>
+            <button id="send">SEND</button>
+        </td>
+    </tr>
+    
+</table>
+
+<script src="js/contact-dyn.js"></script>
