@@ -1,0 +1,32 @@
+h1 {
+    color: white;
+    background-color: #222;
+    text-align: center;
+    border-radius: 20px;
+    padding: 12px;
+}
+h3 {
+    color: white;
+    background-color: #222;
+    text-align: center;
+    border-radius: 10px;
+    padding: 6px;
+}
+body{
+    margin: auto;
+    padding: 10px 50px;
+    max-width: 900px;
+    min-width: 400px;
+}
+button {
+    border: 0px;
+    color: aliceblue;
+    background-color: forestgreen;
+    border-radius: 20px;
+    outline: none;
+}
+
+button:hover {
+    color: forestgreen;
+    background-color: white;
+}
