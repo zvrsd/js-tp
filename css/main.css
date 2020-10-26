@@ -152,7 +152,9 @@ button.remove_button:hover {
 #page_content {
     margin-top: 24px
 }
-#total_table {}
+#total_table {
+    
+}
 
 /* Different sizes for labels */
 .label-xs {
@@ -175,10 +177,15 @@ button.remove_button:hover {
     color: aqua;
     font-size: 26px;
 }
-
+.icon_sm {
+    display: block;
+    width: 24px;
+    height: 100%;
+}
 .align_left {
     text-align: left;
 }
+
 .info_message,
 .error_message,
 #error_label,
