@@ -8,7 +8,6 @@ const CONTACT_FRAG_URL = "../frag/contact.html";
 var contentDiv = null;
 var homeLink = null;
 var cartLink = null;
-var cartLink = null;
 var contactLink = null;
 
 var menuTabs = null;

@@ -1,0 +1,27 @@
+.pages_bar {
+    display: inline-block;
+    background-color: #222;
+    border-radius: 12px;
+}
+
+/* Links inside the pagebar */
+.pages_bar a {
+    float: left;
+    border-radius: 10px;
+    color: #ddd;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+    min-width: 24px;
+}
+
+/* Change background on mouse-over */
+.pages_bar a:hover {
+    background: #f2f2f2;
+    color: black;
+}
+
+.active {
+    color: white;
+    background-color: forestgreen;
+}
