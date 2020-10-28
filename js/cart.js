@@ -48,6 +48,7 @@ function calculatePrices(event) {
     // Loop throught each row
     for (var i = 0; i <= newRowID; i++) {
 
+
         var qtyInput = document.querySelector("#qty_input_" + i);
         var priceLabel = document.querySelector(".price_label_" + i);
         var totalLabel = document.querySelector(".price_total_label_" + i);
