@@ -1,6 +1,9 @@
 const STUDENTS_URL = "data/students.json";
 
-getStudents();
+
+getRates();
+
+//getStudents();
 
 function getStudents(callback) {
 
@@ -44,11 +47,23 @@ function getStudents(callback) {
 function updateList(accepted, refused) {
 
     var tableContent = $("#accepted_table");
+    var tableHead = $("<thead>");
+    console.log(tableHead);
+
     var studentRow = null;
+    var studentHeader = null;
     var studentData = null;
 
     studentRow = document.createElement("tr");
 
+    for (let key in accepted[0]) {
+        studentRow = document.createElement("tr");
+        studentHeader = document.createElement("th");
+        studentHeader.innerHTML = key;
+
+        studentRow.appendChild(studentHeader);
+        tableHead.append(studentRow);
+    }
     // Loop over accepted students
     for (let key in accepted) {
 
@@ -60,13 +75,37 @@ function updateList(accepted, refused) {
             studentData = document.createElement("td");
             studentData.id = "student_" + key + "_" + attrib;
             studentData.innerHTML = accepted[key][attrib];
-            console.log("attrib : " + attrib);
+            //console.log("attrib : " + attrib);
             studentRow.appendChild(studentData);
         }
 
         tableContent.append(studentRow);
-        console.log("key " + key);
+        //console.log("key " + key);
     }
 
-    console.log(accepted);
+    //console.log(accepted);
+}
+
+function getRates() {
+
+    $.ajax({
+
+        url: "https://api.coinpaprika.com/v1/coins",
+        dataType: "JSON",
+
+        success: function (data) {
+            console.log("values " + data);
+
+            header = [];
+            accepted = [];
+
+            // Iterates over the student list
+            for (key in data) {
+                //console.log("key : "+key);
+                accepted.push(data[key]);
+            }
+
+            updateList(accepted);
+        }
+    });
 }
